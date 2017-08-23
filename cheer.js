@@ -1,15 +1,30 @@
-let cheerLetters = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
+const cheerLetters = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
+const phrase1 = 'Give me a';
+const phrase2 = 'Give me an';
 
-console.log('Give me a', cheerLetters[0]);
-console.log('Give me an', cheerLetters[1]);
-console.log('Give me a', cheerLetters[2]);
-console.log('Give me a', cheerLetters[3]);
-console.log('Give me a', cheerLetters[4]);
-console.log('Give me an', cheerLetters[5]);
-console.log('Give me an', cheerLetters[6]);
+console.log(phrase1, cheerLetters[0]);
+console.log(phrase2, cheerLetters[1]);
+console.log(phrase1, cheerLetters[2]);
+console.log(phrase1, cheerLetters[3]);
+console.log(phrase1, cheerLetters[4]);
+console.log(phrase2, cheerLetters[5]);
+console.log(phrase2, cheerLetters[6]);
 console.log('What does that spell?');
 console.log('JOHN DOE!');
-console.log('Note: the "a" vs. "an"');
+
+// const cheer1 = {
+//   command1: "Give me a",
+//   letter1: ["J", "H", "N", "D"]
+// };
+
+// setTimeout(cheer1, 1000);
+
+// const cheer2 = {
+//   command2: "Give me an",  
+//   letter2: ["O", "O", "E"]  
+// };
+
+// console.log(command1, letter1[0]++);
 
 
 // $ node cheer.js
