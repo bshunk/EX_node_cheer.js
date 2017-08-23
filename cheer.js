@@ -1,23 +1,24 @@
-const cheerLetters = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
-const phrase1 = 'Give me a';
-const phrase2 = 'Give me an';
+const cheerArr = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
+const cheer1 = () => {
+  phrase1: 'Give me a',
+  letter2: 'J!', 'H!', 'N!', 'D!'
+};
+const cheer2 = () => {
+  phrase2: 'Give me an',
+  letter2: ['O!', 'O!', 'E!']
+};
 
-console.log(phrase1, cheerLetters[0]);
-console.log(phrase2, cheerLetters[1]);
-console.log(phrase1, cheerLetters[2]);
-console.log(phrase1, cheerLetters[3]);
-console.log(phrase1, cheerLetters[4]);
-console.log(phrase2, cheerLetters[5]);
-console.log(phrase2, cheerLetters[6]);
+console.log(cheer1, cheerArr[0]);
+console.log(cheer2, cheerArr[1]);
+console.log(cheer1, cheerArr[2]);
+console.log(cheer1, cheerArr[3]);
+console.log(cheer1, cheerArr[4]);
+console.log(cheer2, cheerArr[5]);
+console.log(cheer2, cheerArr[6]);
 console.log('What does that spell?');
 console.log('JOHN DOE!');
 
-// const cheer1 = {
-//   command1: "Give me a",
-//   letter1: ["J", "H", "N", "D"]
-// };
-
-// setTimeout(cheer1, 1000);
+setTimeout(cheer1, 1000);
 
 // const cheer2 = {
 //   command2: "Give me an",  
