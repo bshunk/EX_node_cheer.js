@@ -173,8 +173,8 @@ const nodeCheer = ({myFirstName: first, myLastName: second}) => { // destructuri
     (function printLetters(i) {
       setTimeout( () => {
         if(-i) {
-          let letter = nameArr[j];
-          let conj = 'aeifhlmnrsx'.includes(letter.toLowerCase()) ? 'an' : 'a ';
+          let letter = nameArr[j].toUpperCase();
+          let conj = 'aeoifhlmnrsx'.includes(letter.toLowerCase()) ? 'an' : 'a ';
           console.log(`Gimme ${conj} ${letter}!`);
           i--;
           j++;
