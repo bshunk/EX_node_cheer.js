@@ -40,8 +40,17 @@ const cheer = {
 let cheer1 = cheer.chant.chant1;
 console.log(cheer1, cheer.letterArr[0]);
 
+// new way
+const { chant: {chant1, chant2}, letterArr} = cheer;
+console.log('first chant is', chant1);
+console.log(chant1, letterArr[0]);
+console.log(chant2, letterArr[1]);
 
-
+// You can even pass in an obj as an argument and destructure it
+function cheerStuff({chant: {chant1, chant2}, letterArr}) {
+  console.log(`The first chant is ${chant1}, and the first letter is ${letterArr[0]}`);
+}
+cheerStuff(cheer);
 // sets delay for one second
 // setTimeout(cheer1, 1000);
 
