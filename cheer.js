@@ -51,6 +51,19 @@ function cheerStuff({chant: {chant1, chant2}, letterArr}) {
   console.log(`The first chant is ${chant1}, and the first letter is ${letterArr[0]}`);
 }
 cheerStuff(cheer);
+
+// You can do it with arrays, too
+const lettersArr = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
+const [a,b] = lettersArr;
+console.log('a and b are', a, b);
+
+const [,,,,,c,d] = lettersArr;
+console.log('c and d are', c, d);
+
+
+
+
+
 // sets delay for one second
 // setTimeout(cheer1, 1000);
 
