@@ -62,11 +62,91 @@
 
 // *******************************************************************************
 
-let chants = ['Give me a', 'Give me an'];
-let chantLetters = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
+// let chants = ['Give me a', 'Give me an'];
+// let chantLetters = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
 
-let meldedChants = [...chants, ...chantLetters];
-console.log('melded', meldedChants);
+// let meldedChants = [...chants, ...chantLetters];
+// console.log('melded', meldedChants);
+
+// *******************************************************************************
+
+// WTF? Work on Joe's wtf section lol
+// let cheerBox = ['Give me a', 'J', '!'];
+
+// let cheerObject = cheerBox.entries();
+// console.log('funky', cheerObject);
+
+// For of loop
+// for (let [index, elem] of cheerObject) {
+//   console.log(index, elem);
+// }
+
+// *******************************************************************************
+
+//combining objects
+// const cheer1 = {
+//   chant: 'Give me a',
+//   letter: ['J!', 'H!', 'N!', 'D!']
+// };
+
+// const cheer2 = {
+//   chant: 'Give me an',
+//   letter: ['O!', 'O!', 'E!']
+// };
+
+// const UnholyAlliance = Object.assign(cheer1, cheer2);
+// const Wow = {...cheer1, ...cheer2};
+// console.log('Uh oh', UnholyAlliance);
+
+// const Cheer1Copy = Object.assign({}, cheer1);
+// console.log('New Cheer', Cheer1Copy);
+
+// *******************************************************************************
+
+// Map and Set kinda like Object and Array
+// Set
+// const cheerSet = new Set();
+
+// cheerSet.add('Give me a');
+// cheerSet.add('J!');
+// cheerSet.add('Did this work?');
+// console.log('cheerSet', cheerSet.has('Give me a'));
+// console.log('cheerSet size', cheerSet.size);
+// cheerSet.delete('J!');
+
+// let BobbyArr = ['Give me an', 'O!'];
+// cheerSet.add(['Give me an', 'O!']);
+// console.log('awe', cheerSet.has(BobbyArr));
+
+// BobbyArr.push('J!');
+// console.log('new cheer set', cheerSet);
+
+// let hungrySet = new Set();
+// hungrySet.add("Lunch");
+
+// cheerSet.add(hungrySet);
+// console.log('awesome nest', cheerSet);
+
+// *******************************************************************************
+
+// MAP
+let chant = {
+  cheer1: 'Give me a',
+  cheer2: 'Give me an',
+  letters: ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'],
+  question: 'What does that spell?',
+  answer: 'JOHN DOE!'
+  // newChant: () => {'chant.cheer1', 'letters[0]'}
+};
+
+function newChant() {
+  return "Give me a J!"
+};
+
+let myMap = new Map();
+myMap.set("cheer1", "Give me a J!");
+console.log('myMap', myMap.values());
+console.log('myMap', myMap.keys());
 
 // sets delay for one second
 // setTimeout(cheer1, 1000);
