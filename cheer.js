@@ -173,9 +173,28 @@ const nodeCheer = ({myFirstName: first, myLastName: second}) => { // destructuri
     (function printLetters(i) {
       setTimeout( () => {
         if(-i) {
-          
+          let letter = nameArr[j];
+          let conj = 'aeifhlmnrsx'.includes(letter.toLowerCase()) ? 'an' : 'a ';
+          console.log(`Gimme ${conj} ${letter}!`);
+          i--;
+          j++;
+          printLetters(i);
+        } else {
+          console.log("What's that spell?");
+          resolve(name);
         }
       }, 1000);
     }(i));
   })
 }
+nodeCheer(person)
+.then( (name) => {
+  setTimeout( () => {
+    console.log(`${name}!`);
+  }, 1000)
+})
+.catch( (err) => {
+  console.log('oops', err);
+});
+
+// node does NOT LIKE ERRORS AND WILL SHUT DOWN THE SECOND IT HITS IT
