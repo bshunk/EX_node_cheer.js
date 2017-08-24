@@ -81,6 +81,25 @@
 //   console.log(index, elem);
 // }
 
+// *******************************************************************************
+
+//combining objects
+const cheer1 = {
+  chant: 'Give me a',
+  letter: ['J!', 'H!', 'N!', 'D!']
+};
+
+const cheer2 = {
+  chant: 'Give me an',
+  letter: ['O!', 'O!', 'E!']
+};
+
+const UnholyAlliance = Object.assign(cheer1, cheer2);
+// const Wow = {...cheer1, ...cheer2};
+console.log('Uh oh', UnholyAlliance);
+
+const Cheer1Copy = Object.assign({}, cheer1);
+console.log('New Cheer', Cheer1Copy);
 
 // sets delay for one second
 // setTimeout(cheer1, 1000);
