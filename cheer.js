@@ -1,43 +1,35 @@
+// object literal shorthand
+// settign variables to const
 const cheerArr = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
-const cheer1 = () => {
-  chant: { firstChant: 'Give me a'},
-  firstletter: 'J!', 'H!', 'N!', 'D!'
-}
-const cheer2 = () => {
-  secondChant: 'Give me an',
-  secondLetter: 'O!', 'O!', 'E!'
-}
-
-let myOldCheer = {
-  phrase: phras1,
-
-}
-
-
-
-
-
-
-console.log(cheer1, cheerArr[0]);
-console.log(cheer2, cheerArr[1]);
-console.log(cheer1, cheerArr[2]);
-console.log(cheer1, cheerArr[3]);
-console.log(cheer1, cheerArr[4]);
-console.log(cheer2, cheerArr[5]);
-console.log(cheer2, cheerArr[6]);
+const chant1 = 'Give me a';
+const chant2 = 'Give me an';
+// old way of making object
+let myOldChant = {
+  cheerArr: cheerArr,
+  chant1: chant1,
+  chant2: chant2
+};
+// new way of making object
+let myNewChant = { cheerArr, chant1, chant2 };
+// console logs to see if it works
+console.log(myNewChant.chant1, myNewChant.cheerArr[0]);
+console.log(myNewChant.chant2, myNewChant.cheerArr[1]);
+console.log(myNewChant.chant1, myNewChant.cheerArr[2]);
+console.log(myNewChant.chant1, myNewChant.cheerArr[3]);
+console.log(myNewChant.chant1, myNewChant.cheerArr[4]);
+console.log(myNewChant.chant2, myNewChant.cheerArr[5]);
+console.log(myNewChant.chant2, myNewChant.cheerArr[6]);
 console.log('What does that spell?');
 console.log('JOHN DOE!');
 
-setTimeout(cheer1, 1000);
 
 
-// $ node cheer.js
-// Give me a J!
-// Give me an O!
-// Give me an H!
-// Give me an N!
-// Give me a D!
-// Give me an O!
-// Give me an E!
-// What does that spell?
-// JOHN DOE!
+
+
+
+
+
+
+// sets delay for one second
+// setTimeout(cheer1, 1000);
+
