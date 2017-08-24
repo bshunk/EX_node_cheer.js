@@ -29,10 +29,16 @@
 // *******************************************************
 
 // destructuring assignment
+const cheer = {
+  chant: { chant1: 'Give me a', chant2: 'Give me an'},
+  letterArr: ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'],
+  question1: 'What does that spell?',
+  answer1: 'JOHN DOE!'
+}
 
-
-
-
+// old way
+let cheer1 = cheer.chant.chant1;
+console.log(cheer1, cheer.letterArr[0]);
 
 
 
