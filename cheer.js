@@ -1,28 +1,34 @@
 // object literal shorthand
+
 // settign variables to const
-const cheerArr = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
-const chant1 = 'Give me a';
-const chant2 = 'Give me an';
+// const cheerArr = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
+// const chant1 = 'Give me a';
+// const chant2 = 'Give me an';
+
 // old way of making object
-let myOldChant = {
-  cheerArr: cheerArr,
-  chant1: chant1,
-  chant2: chant2
-};
+// let myOldChant = {
+//   cheerArr: cheerArr,
+//   chant1: chant1,
+//   chant2: chant2
+// };
+
 // new way of making object
-let myNewChant = { cheerArr, chant1, chant2 };
+// let myNewChant = { cheerArr, chant1, chant2 };
+
 // console logs to see if it works
-console.log(myNewChant.chant1, myNewChant.cheerArr[0]);
-console.log(myNewChant.chant2, myNewChant.cheerArr[1]);
-console.log(myNewChant.chant1, myNewChant.cheerArr[2]);
-console.log(myNewChant.chant1, myNewChant.cheerArr[3]);
-console.log(myNewChant.chant1, myNewChant.cheerArr[4]);
-console.log(myNewChant.chant2, myNewChant.cheerArr[5]);
-console.log(myNewChant.chant2, myNewChant.cheerArr[6]);
-console.log('What does that spell?');
-console.log('JOHN DOE!');
+// console.log(myNewChant.chant1, myNewChant.cheerArr[0]);
+// console.log(myNewChant.chant2, myNewChant.cheerArr[1]);
+// console.log(myNewChant.chant1, myNewChant.cheerArr[2]);
+// console.log(myNewChant.chant1, myNewChant.cheerArr[3]);
+// console.log(myNewChant.chant1, myNewChant.cheerArr[4]);
+// console.log(myNewChant.chant2, myNewChant.cheerArr[5]);
+// console.log(myNewChant.chant2, myNewChant.cheerArr[6]);
+// console.log('What does that spell?');
+// console.log('JOHN DOE!');
 
+// *******************************************************
 
+// destructuring assignment
 
 
 
