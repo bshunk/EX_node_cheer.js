@@ -105,27 +105,48 @@
 
 // Map and Set kinda like Object and Array
 // Set
-const cheerSet = new Set();
+// const cheerSet = new Set();
 
-cheerSet.add('Give me a');
-cheerSet.add('J!');
-cheerSet.add('Did this work?');
-console.log('cheerSet', cheerSet.has('Give me a'));
-console.log('cheerSet size', cheerSet.size);
-cheerSet.delete('J!');
+// cheerSet.add('Give me a');
+// cheerSet.add('J!');
+// cheerSet.add('Did this work?');
+// console.log('cheerSet', cheerSet.has('Give me a'));
+// console.log('cheerSet size', cheerSet.size);
+// cheerSet.delete('J!');
 
-let BobbyArr = ['Give me an', 'O!'];
-cheerSet.add(['Give me an', 'O!']);
-console.log('awe', cheerSet.has(BobbyArr));
+// let BobbyArr = ['Give me an', 'O!'];
+// cheerSet.add(['Give me an', 'O!']);
+// console.log('awe', cheerSet.has(BobbyArr));
 
-BobbyArr.push('J!');
-console.log('new cheer set', cheerSet);
+// BobbyArr.push('J!');
+// console.log('new cheer set', cheerSet);
 
-let hungrySet = new Set();
-hungrySet.add("Lunch");
+// let hungrySet = new Set();
+// hungrySet.add("Lunch");
 
-cheerSet.add(hungrySet);
-console.log('awesome nest', cheerSet);
+// cheerSet.add(hungrySet);
+// console.log('awesome nest', cheerSet);
+
+// *******************************************************************************
+
+// MAP
+let chant = {
+  cheer1: 'Give me a',
+  cheer2: 'Give me an',
+  letters: ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'],
+  question: 'What does that spell?',
+  answer: 'JOHN DOE!'
+  // newChant: () => {'chant.cheer1', 'letters[0]'}
+};
+
+function newChant() {
+  return "Give me a J!"
+};
+
+let myMap = new Map();
+myMap.set("cheer1", "Give me a J!");
+console.log('myMap', myMap.values());
+console.log('myMap', myMap.keys());
 
 // sets delay for one second
 // setTimeout(cheer1, 1000);
