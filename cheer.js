@@ -84,22 +84,48 @@
 // *******************************************************************************
 
 //combining objects
-const cheer1 = {
-  chant: 'Give me a',
-  letter: ['J!', 'H!', 'N!', 'D!']
-};
+// const cheer1 = {
+//   chant: 'Give me a',
+//   letter: ['J!', 'H!', 'N!', 'D!']
+// };
 
-const cheer2 = {
-  chant: 'Give me an',
-  letter: ['O!', 'O!', 'E!']
-};
+// const cheer2 = {
+//   chant: 'Give me an',
+//   letter: ['O!', 'O!', 'E!']
+// };
 
-const UnholyAlliance = Object.assign(cheer1, cheer2);
+// const UnholyAlliance = Object.assign(cheer1, cheer2);
 // const Wow = {...cheer1, ...cheer2};
-console.log('Uh oh', UnholyAlliance);
+// console.log('Uh oh', UnholyAlliance);
 
-const Cheer1Copy = Object.assign({}, cheer1);
-console.log('New Cheer', Cheer1Copy);
+// const Cheer1Copy = Object.assign({}, cheer1);
+// console.log('New Cheer', Cheer1Copy);
+
+// *******************************************************************************
+
+// Map and Set kinda like Object and Array
+// Set
+const cheerSet = new Set();
+
+cheerSet.add('Give me a');
+cheerSet.add('J!');
+cheerSet.add('Did this work?');
+console.log('cheerSet', cheerSet.has('Give me a'));
+console.log('cheerSet size', cheerSet.size);
+cheerSet.delete('J!');
+
+let BobbyArr = ['Give me an', 'O!'];
+cheerSet.add(['Give me an', 'O!']);
+console.log('awe', cheerSet.has(BobbyArr));
+
+BobbyArr.push('J!');
+console.log('new cheer set', cheerSet);
+
+let hungrySet = new Set();
+hungrySet.add("Lunch");
+
+cheerSet.add(hungrySet);
+console.log('awesome nest', cheerSet);
 
 // sets delay for one second
 // setTimeout(cheer1, 1000);
