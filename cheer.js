@@ -62,11 +62,25 @@
 
 // *******************************************************************************
 
-let chants = ['Give me a', 'Give me an'];
-let chantLetters = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
+// let chants = ['Give me a', 'Give me an'];
+// let chantLetters = ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'];
 
-let meldedChants = [...chants, ...chantLetters];
-console.log('melded', meldedChants);
+// let meldedChants = [...chants, ...chantLetters];
+// console.log('melded', meldedChants);
+
+// *******************************************************************************
+
+// WTF? Work on Joe's wtf section lol
+// let cheerBox = ['Give me a', 'J', '!'];
+
+// let cheerObject = cheerBox.entries();
+// console.log('funky', cheerObject);
+
+// For of loop
+// for (let [index, elem] of cheerObject) {
+//   console.log(index, elem);
+// }
+
 
 // sets delay for one second
 // setTimeout(cheer1, 1000);
