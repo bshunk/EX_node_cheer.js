@@ -174,7 +174,7 @@ const nodeCheer = ({myFirstName: first, myLastName: second}) => { // destructuri
       setTimeout( () => {
         if(-i) {
           let letter = nameArr[j].toUpperCase();
-          let conj = 'aeoifhlmnrsx'.includes(letter.toLowerCase()) ? 'an' : 'a ';
+          let conj = 'aeifhlmnorsx'.includes(letter.toLowerCase()) ? 'an' : 'a ';
           console.log(`Gimme ${conj} ${letter}!`);
           i--;
           j++;
