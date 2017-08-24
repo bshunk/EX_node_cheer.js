@@ -130,24 +130,71 @@
 // *******************************************************************************
 
 // MAP
-let chant = {
-  cheer1: 'Give me a',
-  cheer2: 'Give me an',
-  letters: ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'],
-  question: 'What does that spell?',
-  answer: 'JOHN DOE!'
-  // newChant: () => {'chant.cheer1', 'letters[0]'}
-};
+// let chant = {
+//   cheer1: 'Give me a',
+//   cheer2: 'Give me an',
+//   letters: ['J!', 'O!', 'H!', 'N!', 'D!', 'O!', 'E!'],
+//   question: 'What does that spell?',
+//   answer: 'JOHN DOE!'
+//   // newChant: () => {'chant.cheer1', 'letters[0]'}
+// };
 
-function newChant() {
-  return "Give me a J!"
-};
+// function newChant() {
+//   return "Give me a J!"
+// };
 
-let myMap = new Map();
-myMap.set("cheer1", "Give me a J!");
-console.log('myMap', myMap.values());
-console.log('myMap', myMap.keys());
+// let myMap = new Map();
+// myMap.set("cheer1", "Give me a J!");
+// console.log('myMap', myMap.values());
+// console.log('myMap', myMap.keys());
 
 // sets delay for one second
 // setTimeout(cheer1, 1000);
 
+// *******************************************************************************
+
+// CODE ALONG WITH JOSEPH
+
+const myFirstName = "Bobby"; // const
+const myLastName = "Shunk";
+const person = { // object literal shorthand
+  myFirstName,
+  myLastName,
+  age: "twenty-seven",
+  job: "dev student"
+}
+
+const nodeCheer = ({myFirstName: first, myLastName: second}) => { // destructuring assignment and fat arrow
+  return new Promise( (resolve, reject) => { // promise
+    let name = `${first} ${second}`.toUpperCase(); // string template literals, let
+    let nameArr = [...first, ...second]; // spread operator
+    let i = nameArr.length; // JS recursion
+    let j = 0;
+    (function printLetters(i) {
+      setTimeout( () => {
+        if(-i) {
+          let letter = nameArr[j];
+          let conj = 'aeifhlmnrsx'.includes(letter.toLowerCase()) ? 'an' : 'a ';
+          console.log(`Gimme ${conj} ${letter}!`);
+          i--;
+          j++;
+          printLetters(i);
+        } else {
+          console.log("What's that spell?");
+          resolve(name);
+        }
+      }, 1000);
+    }(i));
+  })
+}
+nodeCheer(person)
+.then( (name) => {
+  setTimeout( () => {
+    console.log(`${name}!`);
+  }, 1000)
+})
+.catch( (err) => {
+  console.log('oops', err);
+});
+
+// node does NOT LIKE ERRORS AND WILL SHUT DOWN THE SECOND IT HITS IT
